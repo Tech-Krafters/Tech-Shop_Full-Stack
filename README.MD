@@ -11,3 +11,5 @@
 > `source venv/bin/activate` <br>
 > To deactivate the virtual environment, run the following command: <br>
 > `deactivate` <br>
+
+>Also Delete The Existing .idea Folder
