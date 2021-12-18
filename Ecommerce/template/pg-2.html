@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      {% if title %}
+         <title>{{ title }}</title>
+      {% else %}
+         <title>Dummy Website</title>
+      {% endif %}
+      <!-- CDN's -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+      <!-- ICON -->
+      <link rel="icon" type="text/css" href="../static/images/main page/THE TECH SHOP-logos_white.png">
+      
+      <!-- STYLESHEET -->
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+   </head>
+   <body>
+      <div class="bg">
+         <div class="navbar" id="NAvBAr">
+            <div class="logo">
+               <a href="{{ url_for('main') }}"><h1>The Tech Shop®</h1></a>
+            </div>
+            <nav>
+               <ul id="MenuItems">
+                  <li><a href="{{ url_for('products') }}" class="Menu border">Products</a></li>
+                  <li><a href="About us.html" class="Menu border">Get to know Us</a></li>
+                  <li><a href="contact us.html" class="Menu border">Contact us</a></li>
+                  <li><a href="LSP.html" class="Menu border">Login/SignUp</a></li>
+               </ul>
+            </nav>
+            <img src="../static/images/menu.png" class="menu-icon" onclick="menutoggle()" width="30px" height="30px">
+         </div>
+      </div>
+      <!--featured products-->
+      <div class="small-container" >
+         <div class="row-1 row-2">
+            <h2 style="font-family: MuseoModerno">All Products, PAGE 2</h2>
+         </div>
+         <div class="row">
+            <div class="card7">
+               <div class="imgBx7">
+                  <img src="../static/images/laptops/lenovo/1.png">
+                  <div class="contentBx7">
+                     <h4>Lenovo Legion 5Pi</h4>
+                     <h4><s>₹ 1,35,490.00</s></h4>
+                     <h4>₹ 121,941</h4>
+                     <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                     </div>
+                     <a href="pr8.html" class="buy">Buy now</a>
+                  </div>
+               </div>
+            </div>
+            <div class="card8">
+               <div class="imgBx8">
+                  <img src="../static/images/MI/1.png">
+                  <div class="contentBx8">
+                     <h4>Mi Smart Band 4</h4>
+                     <h4><s>₹ 1,999.00</s></h4>
+                     <h4>₹ 1,500.00</h4>
+                     <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                     </div>
+                     <a href="pr11.html" class="buy">Buy now</a>
+                  </div>
+               </div>
+            </div>
+            <div class="card9">
+               <div class="imgBx9">
+                  <img src="../static/images/fitbit/1.png">
+                  <div class="contentBx9">
+                     <h4>Fitbit Charge 4</h4>
+                     <p>₹ 10,898.00</p>
+                     <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                     </div>
+                     <a href="pr10.html" class="buy">Buy now</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="card10">
+               <div class="imgBx10">
+                  <img src="../static/images/samsung/3.png">
+                  <div class="contentBx10">
+                     <h4>Samsung Galaxy Active 2</h4>
+                     <p >₹ 19,499.00</p>
+                     <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                     </div>
+                     <a href="pr12.html" class="buy">Buy now</a>
+                  </div>
+               </div>
+            </div>
+            <div class="card11">
+               <div class="imgBx11">
+                  <img src="../static/images/one plus/1.png">
+                  <div class="contentBx11">
+                     <h4>OnePlus Watch</h4>
+                     <p >₹14,999</p>
+                     <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                     </div>
+                     <a href="pr9.html" class="buy">Buy now</a>
+                  </div>
+               </div>
+            </div>
+            <div class="card12">
+               <div class="imgBx12">
+                  <img src="../static/images/main page/alienware1.png">
+                  <div class="contentBx12">
+                     <h4>DELL Alienware  m15(R3)</h4>
+                     <p >₹ 2,19,990.00</p>
+                     <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                     </div>
+                     <a href="pr6.html" class="buy">Buy now</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="page-btn"> 
+            <a href="{{ url_for('products') }}"><span>1</span></a>
+            <a href="pg-2.html"><span>2</span></a>
+         </div>
+      </div>
+      <!--footer-->
+      <div class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="footer-col-1">
+                  <h3>Mobile Application Soon to be Accessible<br>through the Play store and Apple Appstore</h3>
+                  <p>The Tech shop's Existance is to fullfil<br>the Technical needs of a normal man at a moderate price </p>
+               </div>
+               <div class="footer-col-2">
+                  <div class="logo1">
+                     <img src="../static/images/main page/THE TECH SHOP.png ">
+                  </div>
+               </div>
+               <div class="footer-col-3">
+                  <h3>Useful Links</h3>
+                  <ul>
+                     <a href="offers.html">
+                        <li>offers</li>
+                     </a>
+                     <a href="faq.html">
+                        <li>FAQ</li>
+                     </a>
+                     <a href="About us.html">
+                        <li>About Us</li>
+                     </a>
+                     <a href="products.html">
+                        <li>Products</li>
+                     </a>
+                     <a href="LSP.html">
+                        <li>Login/SignUp</li>
+                     </a>
+                     <a href="main.html">
+                        <li>Home</li>
+                     </a>
+                  </ul>
+               </div>
+               
+            </div>
+            <hr>
+            <p class="copyright"> © 2021 The Tech Shop | A TechKrafters Product, All rights reserved</p>
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+      <script src="{{ url_for('static', filename='Products.js') }}"></script>
+      <script src="{{ url_for('static', filename='Menu.js') }}"></script>
+      <script src="{{ url_for('static', filename='Nav.js') }}"></script>
+   </body>
+</html>

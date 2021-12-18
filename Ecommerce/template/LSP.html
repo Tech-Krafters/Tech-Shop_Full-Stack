@@ -1,0 +1,40 @@
+{% extends "foot.html" %}
+{% block content %}
+      <!--account page-->  
+      <div class="account-page">
+         <div class="container">
+            <div class="row">
+               <div  style="display: block;margin-left: auto;margin-right: auto; flex-basis: 40%;min-width: 300px;">
+                  <img src="https://strizerortix.github.io\THE_TECH_SHOP\WORK\WEB DEV\images\main page\login.png" width="100%" >
+               </div>
+               <div class="column1">
+                  <div class="form-container">
+                     <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Registration</span>
+                        <hr id="Indicator">
+                     </div>
+                     <form id="LoginForm" onsubmit="">
+                        <input type="email" id="email"   name="Email" placeholder="Email ID" required><br>
+                        <span id="erroremail" style="color: red; font-size: 10px;"></span>
+                        <input type="password" id="password" name="Password" placeholder="Password Please" required><br>
+                        <span id="errorpassword" style="color: red; font-size: 10px;"></span>
+                        <button type="submit" class="button">Login</button>
+                        <a href="">Forgot Password</a>
+                     </form>
+                     <form id="RegForm" onsubmit="return rgv()" name="Rform" method="POST">
+                        <input type="text"  id="uname"  name="uname" placeholder="Username" required><br>
+                        <input type="email"  id="email"  name="Email" placeholder="Email ID" required><br>
+                        <span id="erroremail" style="color: red; font-size: 10px;"></span>
+                        <input type="password"  id="password"    name="Password" placeholder="Password Please" required><br>
+                        <span id="errorpassword" style="color: red; font-size: 10px;"></span>
+                        <input type="password"  id="password"    name="Password" placeholder="Re-Enter Your Password Please" required><br>
+                        <span id="errorpassword" style="color: red; font-size: 10px;"></span>
+                        <button type="submit" class="button">Register</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  {% if title %}
+     <title>{{ title }}</title>
+  {% else %}
+     <title>Dummy Website</title>
+  {% endif %}
+  <!-- CDN's -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <!-- ICON -->
+  <link rel="icon" type="text/css" href="../static/images/main page/THE TECH SHOP-logos_white.png">
+  
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+      body{
+              background: radial-gradient(#000, #111) !important;
+              color: white !important;
+              overflow: hidden;
+              height: 100vh;
+              user-select: none;
+      }
+    </style>
+</head>
+<body>
+
+  <div class="error">404</div>
+  <br /><br />
+  <span class="info">Page not found</span>
+  <img src="http://images2.layoutsparks.com/1/160030/too-much-tv-static.gif" class="static" />
+
+</body>
